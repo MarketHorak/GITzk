@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>pojistenci</title>
+
+</head>
+
+<body>
+    <header class="hlavni">
+        <h2>PojistenciApp</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Pojistenec</a></li>
+                <li><a href="#">xxx.....databaze?</a></li>
+            </ul>
+    </header>
+
+
+    <header>
+        <h3>Novy pojistenec</h3>
+    </header>
+    <form>
+    <section class="pojistenec">
+        <div class="pojistenec_udaje">
+            <img src="smajlik.png"></br>
+            <label for="smajlik">Nahraj foto</label></br>
+
+            <input type="file" id="myfile" name="smajlik" accept="image/*" />
+
+        </div>
+        <div class="pojistenec_udaje">
+            <label for="jmeno">Jmeno <span class="required">*</span></label>
+            <input type="text" id="jmeno" name="jmeno" value="" placeholder="Your name" required="required">
+            </br>
+
+            <label for="prijmeni">Prijmeni <span class="required">*</span></label>
+            <input type="text" id="prijmeni" name="prijmeni" value="" placeholder="Your surname" required="required"
+                autofocus="autofocus" />
+        </div>
+
+
+        <div class="pojistenec_udaje">
+            <label for="age">Vek <span class="required">*</span></label>
+            <input type="number" id="vek" name="vek" value="" placeholder="tvuj vek cislem" required="required"
+                autofocus="autofocus" />
+            </br>
+            <label for="telefon">Telefon <span class="required">*</span></label>
+            <input type="" id="telefon" name="telefon" value="" placeholder="777111666" required="required"
+                autofocus="autofocus" />
+
+        </div>
+
+    </section>
+    <!--  <button id="potvrdit">ULOZIT</button> -->
+<!--     <input type="submit" value="ulozit" id="submit" /> --> // chyba
+<p id="submit"> odeslat</p>
+    </form>
+
+
+    <header>
+        <h3>Pojistenci</h3>
+    </header>
+    <div id="vypisZaznamy">
+
+    </div>
+    <footer>
+        bla bla projekt Market
+    </footer> 
+    
+    <script src="js/Pojistenec.js"></script>
+  <script src="js/Zaznam.js"></script>
+    <script src="js/obsluha.js"></script>
+
+   <!-- <script src="script.js"></script>  -->
+    <!-- <script src="index.js"></script> -->
+</body>
+
+</html>

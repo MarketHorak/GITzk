@@ -1,6 +1,7 @@
 class Pojistenec {
   constructor() {
-    this.zaznamy = [];
+    const zaznamyStorage=localStorage.getItem("zaznamy");
+    this.zaznamy = zaznamyStorage? JSON.parse(zaznamyStorage):[];
 
     this.jmenoInput = document.getElementById("jmeno");
     this.prijmeniInput = document.getElementById("prijmeni");
@@ -23,6 +24,7 @@ class Pojistenec {
         this.telefonInput.value
       );
       this.zaznamy.push(zaznam);
+      localStorage.setItem("zaznamy",JSON.stringify(this.zaznamy))
       this.vypisZaznamy();
       this.nasetujZaznam();
     };
